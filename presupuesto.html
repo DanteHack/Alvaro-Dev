@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto - Álvaro Dev</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Álvaro Dev</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Solicita tu presupuesto</h2>
+            <form id="formPresupuesto">
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required maxlength="15">
+
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required maxlength="40">
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono" required maxlength="9">
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Opciones de presupuesto</legend>
+                    <label for="producto">Producto:</label>
+                    <select id="producto" name="producto">
+                        <option value="web">Sitio Web (500€)</option>
+                        <option value="tienda">Tienda Online (800€)</option>
+                        <option value="app">Aplicación Móvil (1200€)</option>
+                    </select>
+
+                    <label for="plazo">Plazo en meses:</label>
+                    <input type="number" id="plazo" name="plazo" min="1" max="24" value="6">
+
+                    <p>Extras:</p>
+                    <label><input type="checkbox" name="extras" value="seo"> SEO (100€)</label><br>
+                    <label><input type="checkbox" name="extras" value="mantenimiento"> Mantenimiento (150€)</label><br>
+                    <label><input type="checkbox" name="extras" value="seguridad"> Seguridad avanzada (200€)</label><br>
+
+                    <p><strong>Presupuesto total: <span id="total">0€</span></strong></p>
+
+                    <label><input type="checkbox" id="condiciones" required> Acepto las condiciones de privacidad</label><br><br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Resetear</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Álvaro Dev | Calle Ficticia 123, Almería</p>
+            <p>
+                Síguenos:
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="Instagram">📸</a>
+            </p>
+            <p><a href="#">Aviso legal</a></p>
+        </div>
+    </footer>
+    <script src="js/presupuesto.js"></script>
+</body>
+</html>

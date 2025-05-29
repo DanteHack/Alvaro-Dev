@@ -1,0 +1,12 @@
+[
+  {
+    "titulo": "Lanzamiento de nuevo sitio",
+    "descripcion": "¡Nuestro nuevo sitio web está en línea! Explóralo para conocer nuestros servicios.",
+    "imagen": "lanzamiento.jpg"
+  },
+  {
+    "titulo": "Actualización de servicios",
+    "descripcion": "Hemos actualizado nuestra lista de servicios para ofrecerte más soluciones digitales.",
+    "imagen": "servicios.jpg"
+  }
+]
